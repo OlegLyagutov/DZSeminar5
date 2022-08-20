@@ -39,25 +39,22 @@
 
 // [3 7 22 2 78] -> 76
 
-Console.WriteLine("Введите размер массива:");
-int size = Convert.ToInt32(System.Console.ReadLine());
-double[] array = new double[size];
-result = 0;
-double max = 0;
-double min = 0;
-
-for (int i = 0; i < size; i++)
-{
-    Console.WriteLine($"Введите {i+1} элемент:");
-    array[i] = Convert.ToInt32(Console.ReadLine());
-    Console.WriteLine($"[{String.Join("; ", array)}]");
-}
-for (int i = 0; i < size; i++)
-{
-    max = array[i];
-    min = array[i];
-    result = max - min;
-}
-
-
-Console.WriteLine($"Разница между максимальным и минимальным элементом массива равна: {result}");
+// Console.WriteLine("Введите размер массива:");
+// int size = Convert.ToInt32(System.Console.ReadLine());
+// double[] array = new double[size];
+// double result = 0;
+// for (int i = 0; i < size; i++)
+// {
+//     Console.WriteLine($"Введите {i+1} элемент:");
+//     array[i] = Convert.ToInt32(Console.ReadLine());
+// }
+// Console.WriteLine($"[{String.Join("; ", array)}]");
+// double max = array[0];
+// double min = array[0];
+// for (int i = 0; i < size; i++)
+// {
+//     if (array[i] > max) max = array[i];
+//     if (array[i] < min) min = array[i];
+//     result = max - min;
+// }
+// Console.WriteLine($"Разница между максимальным и минимальным элементом массива равна: {result}");
