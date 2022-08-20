@@ -13,6 +13,7 @@
 //     array[i] = new Random().Next(100,999);
 //     if (array[i] % 2 == 0) count++;
 // }
+// Console.WriteLine($"[{String.Join("; ", array)}]");
 // Console.WriteLine($"Количество чётных чисел в массиве: {count}");
 
 // Задача 36: Задайте одномерный массив, заполненный случайными
@@ -28,9 +29,11 @@
 // int sum = 0;
 // for (int i = 0; i < size; i++)
 // {
-//     array[i] = new Random().Next();
-//     if (array[i] % 2 == 1) sum = sum + i;
+//     array[i] = new Random().Next(100);
 // }
+// Console.WriteLine($"[{String.Join("; ", array)}]");
+// for (int i = 1; i < size; i = i + 2)
+// sum = sum + array[i];
 // Console.WriteLine($"Сумма элементов стоящих на нечётных позициях равна: {sum}");
 
 
@@ -38,6 +41,29 @@
 //  между максимальным и минимальным элементов массива.
 
 // [3 7 22 2 78] -> 76
+
+// Вариант 1 ( ввод массива рандомно)
+
+// Console.WriteLine("Введите размер массива:");
+// int size = Convert.ToInt32(System.Console.ReadLine());
+// double[] array = new double[size];
+// double result = 0;
+// for (int i = 0; i < size; i++)
+// {
+//     array[i] = new Random().Next(100);
+// }
+// Console.WriteLine($"[{String.Join("; ", array)}]");
+// double max = array[0];
+// double min = array[0];
+// for (int i = 0; i < size; i++)
+// {
+//     if (array[i] > max) max = array[i];
+//     if (array[i] < min) min = array[i];
+//     result = max - min;
+// }
+// Console.WriteLine($"Разница между максимальным и минимальным элементом массива равна: {result}");
+
+// Вариант 2 (Ввод массива с консоли)
 
 // Console.WriteLine("Введите размер массива:");
 // int size = Convert.ToInt32(System.Console.ReadLine());
